@@ -1,5 +1,7 @@
 package com.example.statetunedcapitolquiz;
 
+import java.util.ArrayList;
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
@@ -16,6 +18,7 @@ public class StartQuizActivity extends Activity {
 		setContentView(R.layout.activity_start_quiz);		
 		Button startQuiz = (Button) findViewById(R.id.startquiz);
 		startQuiz.setOnClickListener(startButtonListener);
+		ArrayList <State> states = new ArrayList <State>();
 	}
 
 	@Override
