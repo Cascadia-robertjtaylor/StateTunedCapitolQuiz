@@ -8,45 +8,47 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".StartQuizActivity" 
     android:background="@drawable/background">
-
-    <TextView
-        android:id="@+id/stateName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/stateArt"
-        android:layout_alignTop="@+id/stateArt"
-        android:layout_marginLeft="97dp"
-        android:text="State" />
-    
+	<TextView
+	        android:id="@+id/stateName"
+	        android:layout_width="200dp"
+	        android:layout_height="wrap_content"
+	        android:layout_alignTop="@id/stateArt"
+	        android:layout_centerHorizontal="true"
+	        android:text="State" />     
+	        
     <ImageView
         android:id="@id/stateArt"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+         />
 
-    <RadioButton
-        android:id="@+id/radioButton1"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="75dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/stateName"
-        android:layout_marginBottom="169dp"
-        android:text="RadioButton" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="214dp"
+        android:text="Button" />
 
-    <RadioButton
-        android:id="@+id/radioButton2"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="75dp"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/radioButton1"
-        android:layout_alignTop="@+id/radioButton1"
-        android:layout_marginTop="58dp"
-        android:text="RadioButton" />
+        android:layout_alignLeft="@+id/button1"
+        android:layout_alignTop="@+id/button1"
+        android:layout_marginTop="52dp"
+        android:layout_centerHorizontal="true"        
+        android:text="Button" />
 
-    <RadioButton
-        android:id="@+id/radioButton3"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="75dp"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/radioButton2"
-        android:layout_below="@+id/radioButton2"
-        android:text="RadioButton" />
+        android:layout_alignLeft="@+id/button2"
+        android:layout_below="@+id/button2"
+        android:layout_centerHorizontal="true"
+        android:text="Button" />
        
 </RelativeLayout>
