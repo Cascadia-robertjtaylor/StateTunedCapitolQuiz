@@ -2,14 +2,20 @@ package com.example.statetunedcapitolquiz;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.view.Menu;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 
 public class StartQuizActivity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_start_quiz);
+		setContentView(R.layout.activity_start_quiz);		
+		Button startQuiz = (Button) findViewById(R.id.startquiz);
+		startQuiz.setOnClickListener(startButtonListener);
 	}
 
 	@Override
@@ -18,5 +24,15 @@ public class StartQuizActivity extends Activity {
 		getMenuInflater().inflate(R.menu.start_quiz, menu);
 		return true;
 	}
+	
+	public OnClickListener startButtonListener = new OnClickListener()
+	{
+		
+		@Override
+		public void onClick(View v) {
+			Intent i=new Intent(StartQuizActivity.this, QuizActivity.class);
+		      startActivity(i);			
+		}
+	};
 
 }
