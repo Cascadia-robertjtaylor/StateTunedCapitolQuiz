@@ -1,7 +1,5 @@
 package com.example.statetunedcapitolquiz;
 
-import java.util.ArrayList;
-
 public class State {
 	private String _name;
 	private String _capitol;
