@@ -16,22 +16,21 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class QuizActivity extends Activity {
-	State [] states = new State[50];
 	Random r = new Random();
 	private int stateIndex;
-	private State stateToQuiz;
 	private TextView stateName;
 	private ImageView stateImage;
 	private Button button1;
 	private Button button2;
 	private Button button3;	
+	State[] states;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity__quiz);
-		stateIndex=r.nextInt(50);
-		//stateToQuiz = states.get(stateIndex);
+		states = (State[])getIntent().getSerializableExtra("State Array");
+		stateIndex=r.nextInt(3);
 		stateName = (TextView) findViewById(R.id.stateName);
 		stateImage = (ImageView) findViewById(R.id.stateImage);
 		button1 = (Button) findViewById(R.id.button1);
@@ -49,8 +48,8 @@ public class QuizActivity extends Activity {
 	public void loadQuizElements()
 	{
 		AssetManager assets = getAssets(); // get app's AssetManager
-	    stateName.setText("Washington");
-		String NextStateImage = "WA.png";
+	    stateName.setText(states[stateIndex].getName());
+		String NextStateImage = states[stateIndex].getImage();
 	    InputStream stream; // used to read in state images
 	    try {
 		stream = assets.open(NextStateImage);	
@@ -66,12 +65,9 @@ public class QuizActivity extends Activity {
 	      
 		
 		//need to randomize the buttons below so capitol is on different buttons
-		button1.setText("Olympia");
-		button2.setText("Seattle");
-		button3.setText("Tacoma");
+		button1.setText(states[stateIndex].getCapitol());
+		button2.setText(states[stateIndex].getCity1());
+		button3.setText(states[stateIndex].getCity2());
 	}
-	public void arraybuilder(State[] a)	
-	{
-		a[0] = new State("Alabama", "Montgomery", "Birmingham", "Mobile", "AL.png");		
-	}
+	
 }

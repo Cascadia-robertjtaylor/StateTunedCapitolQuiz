@@ -37,68 +37,11 @@ public class State {
 	 public String getImage() {
 		   return _image;
 		 }
-	
-	 /*public ArrayList<State> getName() {
-		   return _name;
-		 }
 	 
-	 public ArrayList<State> getCapitol() {
-		   return _capitol;
-		 }
-	 
-	 public ArrayList<State> getCity1() {
-		   return _city1;
-		 }
-	 
-	 public ArrayList<State> getCity2() {
-		   return _city2;
-		 }
-	 
-	 public ArrayList<State> getImage() {
-		   return _image;
-		 }*/
-	
-	/*public String toString()
-	{
-		return 	_name;
-	}
-	
-	public String toString()
-	{
-		return _capitol;
-	}
-	
-	public String toString()
-	{
-		return _city1;
-	}
-	
-	public String toString()
-	{
-		return _city2;
-	}
-	
-	public String toString()
-	{
-		return _image;
-	}*/
-	
+	 public static void buildArray(State[] a)
+	 {
+		 a[0] = new State("Alabama", "Montgomery", "Birmingham", "Mobile", "AL.png");
+		 a[1] = new State("Alaska", "Juneau", "Anchorage", "Fairbanks", "AK.png");
+		 a[2] = new State ("Arizona", "Phoenix", "Tucson", "Mesa", "AZ.png");		 			
+	 }
 }
-
-
-/*package com.example.activitylistexample;
-
-public class Course {
-	private String _name;
-	public Course(String name)
-	{
-		_name = name;
-	}
-	
-	@Override
-	public String toString(){
-		return _name;
-	}
-
-}
-*/
