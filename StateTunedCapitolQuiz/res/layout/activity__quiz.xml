@@ -18,13 +18,13 @@
         android:layout_marginTop="42dp"
         android:text="State" />
    
-    <!--<ImageView
-        android:id="@id/stateArt"
+    <ImageView
+        android:id="@+id/stateImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/button1"
         android:layout_alignLeft="@+id/button1"
-        android:layout_marginBottom="56dp" />-->
+        android:layout_marginBottom="56dp" />
     <Button
         android:id="@+id/button1"
         android:layout_width="75dp"

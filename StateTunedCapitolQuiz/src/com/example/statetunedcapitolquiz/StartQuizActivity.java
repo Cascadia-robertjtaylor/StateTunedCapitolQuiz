@@ -11,14 +11,14 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 
 public class StartQuizActivity extends Activity {
+	
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_start_quiz);		
 		Button startQuiz = (Button) findViewById(R.id.startquiz);
-		startQuiz.setOnClickListener(startButtonListener);
-		ArrayList <State> states = new ArrayList <State>();
+		startQuiz.setOnClickListener(startButtonListener);		
 	}
 
 	@Override
