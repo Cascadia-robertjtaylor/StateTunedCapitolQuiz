@@ -4,6 +4,8 @@ import java.util.ArrayList;
 
 public class StatesArrayBuilder{	
 	
+	ArrayList<State> states = new ArrayList<State>();{
+	
 	states.add(new State ("Alabama", "Montgomery", "Birmingham", "Mobile", "AL.png"));
 	states.add(new State ("Alaska", "Juneau", "Anchorage", "Fairbanks", "AK.png"));
 	states.add(new State ("Arizona", "Phoenix", "Tucson", "Mesa", "AZ.png"));
@@ -54,6 +56,5 @@ public class StatesArrayBuilder{
 	states.add(new State ("West Virginia", "Charleston", "Huntington", "Parkersburg", "WV.png"));
 	states.add(new State ("Wisconsin", "Madison", "Milwaukee", "Green Bay", "WI.png"));
 	states.add(new State ("Wyoming", "Cheyenne", "Casper", "Laramie", "WY.png"));
-
-
+	}
 }

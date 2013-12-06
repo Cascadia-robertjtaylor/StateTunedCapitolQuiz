@@ -25,3 +25,21 @@ public class State {
 			_image;
 	}*/
 }
+
+
+/*package com.example.activitylistexample;
+
+public class Course {
+	private String _name;
+	public Course(String name)
+	{
+		_name = name;
+	}
+	
+	@Override
+	public String toString(){
+		return _name;
+	}
+
+}
+*/
