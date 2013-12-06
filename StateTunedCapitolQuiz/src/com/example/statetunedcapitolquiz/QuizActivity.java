@@ -1,5 +1,6 @@
 package com.example.statetunedcapitolquiz;
 
+import java.util.ArrayList;
 import java.util.Random;
 
 import android.app.Activity;
@@ -10,9 +11,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class QuizActivity extends Activity {
+	ArrayList<State> states = new ArrayList<State>();
 	Random r = new Random();
 	private int stateIndex;
-	//private State stateToQuiz;
+	private State stateToQuiz;
 	private TextView stateName;
 	private ImageView stateImage;
 	private Button button1;
@@ -24,7 +26,7 @@ public class QuizActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity__quiz);
 		stateIndex=r.nextInt(50);
-		//stateToQuiz = states<stateIndex>;
+		stateToQuiz = states<stateIndex>;
 		stateName = (TextView) findViewById(R.id.stateName);
 		stateImage = (ImageView) findViewById(R.id.stateImage);
 		button1 = (Button) findViewById(R.id.button1);
