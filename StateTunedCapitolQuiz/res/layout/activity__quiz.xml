@@ -20,7 +20,8 @@
         android:text="State"
         android:textAlignment="center"
         android:textColor="@id/button1"
-        android:textSize="32dp" />
+        android:textSize="32dp"
+        android:textStyle="italic" />
    
     <ImageView
         android:id="@+id/stateImage"
@@ -30,11 +31,12 @@
         android:layout_alignLeft="@+id/button1"
         android:layout_below="@id/stateName"
         android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
         android:layout_margin="10dp"
         android:layout_marginBottom="10dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
         android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
         android:clickable="false"
         android:contentDescription="Picture of state"
         android:scaleType="center" />
