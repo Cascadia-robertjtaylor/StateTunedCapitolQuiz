@@ -41,7 +41,5 @@ public class StartQuizActivity extends Activity {
 		      //pass states to the new activity
 		}
 	};
-	
-	
 
 }

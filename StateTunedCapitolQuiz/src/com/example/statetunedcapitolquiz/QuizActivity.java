@@ -1,6 +1,5 @@
 package com.example.statetunedcapitolquiz;
 
-import java.io.*;
 import java.io.IOException;
 import java.io.InputStream;
 
