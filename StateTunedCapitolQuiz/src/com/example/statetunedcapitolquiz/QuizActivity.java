@@ -2,8 +2,9 @@ package com.example.statetunedcapitolquiz;
 
 import java.io.IOException;
 import java.io.InputStream;
-//import java.util.ArrayList;
+
 import java.util.Random;
+
 
 import android.app.Activity;
 import android.content.res.AssetManager;
@@ -29,7 +30,7 @@ public class QuizActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity__quiz);
-		states = (State[])getIntent().getSerializableExtra("State Array");
+		states = (State[]) getIntent().getSerializableExtra("State Array");
 		stateIndex=r.nextInt(3);
 		stateName = (TextView) findViewById(R.id.stateName);
 		stateImage = (ImageView) findViewById(R.id.stateImage);
@@ -69,5 +70,6 @@ public class QuizActivity extends Activity {
 		button2.setText(states[stateIndex].getCity1());
 		button3.setText(states[stateIndex].getCity2());
 	}
+	
 	
 }

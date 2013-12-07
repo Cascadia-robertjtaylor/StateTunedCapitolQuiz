@@ -11,7 +11,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 
 public class StartQuizActivity extends Activity {
-	State [] states = new State[50];	
+	State [] states = new State[3];	
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
