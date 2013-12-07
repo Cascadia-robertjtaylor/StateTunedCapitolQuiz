@@ -1,6 +1,6 @@
 package com.example.statetunedcapitolquiz;
 
-public class State {
+public class State  implements java.io.Serializable {
 	private String _name;
 	private String _capitol;
 	private String _city1;
