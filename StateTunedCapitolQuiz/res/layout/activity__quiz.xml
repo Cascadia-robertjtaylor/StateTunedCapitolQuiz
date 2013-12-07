@@ -16,7 +16,10 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="42dp"
-        android:text="State" />
+        android:gravity="center_horizontal"
+        android:text="State"
+        android:textAlignment="center"
+        android:textSize="32dp" />
    
     <ImageView
         android:id="@+id/stateImage"
@@ -25,34 +28,36 @@
         android:layout_above="@+id/button1"
         android:layout_alignLeft="@+id/button1"
         android:layout_marginBottom="56dp" />
+
     <Button
         android:id="@+id/button1"
-        android:layout_width="75dp"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="214dp"
-        android:text="Button" />
+        android:text="Button"
+        android:textSize="24dp" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="75dp"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/button1"
         android:layout_alignTop="@+id/button1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="52dp"
-        android:text="Button" />
+        android:text="Button"
+        android:textSize="24dp" />
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="75dp"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/button2"
         android:layout_below="@+id/button2"
         android:layout_centerHorizontal="true"
-        android:text="Button" />
-
-    
+        android:text="Button"
+        android:textSize="24dp" />
 
 </RelativeLayout>
